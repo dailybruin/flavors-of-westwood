@@ -1,22 +1,79 @@
 <html>
 <head>
-	<title>"Flavors of Westwood"</title>
+	<title>Flavors of Westwood</title>
+<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7">
+</script>
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script src="maplace.min.js"></script>
+<style>
+.gmap {
+    height: 300px;
+    width: 100%;
+    padding: 3px;
+    border: 5px solid rgb(221, 221, 221);
+    font-size: 90%;
+    }
+</style>
 </head>
 
 
 
 
 
+<div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
+<div id="controls-tabs"></div>
+<div id="info"></div>
 
 
 
 
 
 
-
-
-
-
+<script type="text/javascript">
+var LocsB = [
+	{
+			lat: 34.055895,
+			lon: -118.44189,
+			title: 'Saffron & Rose Ice Cream',
+			html: [
+					'<h3>Saffron & Rose Ice Cream</h3>',
+					'<p>Fred Papen’s grandfather moved from Iran to Los Angeles in the 1970s, bringing not only his wife and two children, but also a penchant for making Persian ice cream.</p>'
+			].join(''),
+			icon: 'http://maps.google.com/mapfiles/markerA.png',
+			zoom: 15
+	},
+		{
+			lat: 34.063912,
+			lon: -118.445688,
+			title: 'Honeymade',
+			html: [
+					'<h3>Honeymade</h3>',
+					'<p>Lorem Ipsum..</p>'
+			].join(''),
+			icon: 'http://maps.google.com/mapfiles/markerB.png',
+			zoom: 15
+	}
+];
+$(function() {
+	new Maplace({
+	locations: LocsB,
+	map_div: '#gmap-tabs',
+	controls_div: '#controls-tabs',
+	controls_type: 'list',
+	controls_on_map: false,
+	show_infowindow: false,
+	start: 1,
+	afterShow: function(index, location, marker) {
+		$('#info').html(location.html);
+	},
+		map_options: {
+		set_center: [34.06105, -118.445077],
+		zoom: 15
+		},
+		controls_on_map: false
+	}).Load();
+});
+</script>
 
 
 
