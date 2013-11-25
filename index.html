@@ -38,6 +38,10 @@
 .tabs .ullist li a {
     padding: 0px 23.8px !important;
 }
+.icons-ul {
+	 list-style-type: none; 
+}
+.icon-map-marker{background-position:-24px -72px;}
 </style>
 </head>
 <body>
@@ -61,7 +65,7 @@ var LocsB = [
 			title: 'Saffron & Rose Ice Cream',
 			html: [
 					'<h3>Saffron & Rose Ice Cream</h3>',
-					'<p><img src="http://maps.google.com/mapfiles/markerA.png">Fred Papen’s grandfather moved from Iran to Los Angeles in the 1970s, bringing not only his wife and two children, but also a penchant for making Persian ice cream.</p>'
+					'<p><img src="http://maps.google.com/mapfiles/markerA.png">Fred Papen&#39;s grandfather moved from Iran to Los Angeles in the 1970s, bringing not only his wife and two children, but also a penchant for making Persian ice cream.</p>'
 			].join(''),
 			icon: 'http://maps.google.com/mapfiles/markerA.png',
 			zoom: 15
@@ -85,7 +89,7 @@ var LocsB = [
 			title: 'Angelino&#39;s Cafe',
 			html: [
 					'<h3>Angelino&#39;s Cafe</h3>',
-					'<p>“When my son takes over the business, he will use the same sauce,” Zanali said. “It is important. If I give the sauce to someone else to make, the customer will come over and say this sauce I eat is not like (it was) before, it’s different.”.</p>'
+					'<p>"When my son takes over the business, he will use the same sauce,"" Zanali said. "It is important. If I give the sauce to someone else to make, the customer will come over and say this sauce I eat is not like (it was) before, it’s different."</p>'
 			].join(''),
 			icon: 'http://maps.google.com/mapfiles/markerC.png',
 			zoom: 15,
@@ -97,7 +101,7 @@ var LocsB = [
 			title: 'Fat Sal&#39;s',
 			html: [
 					'<h3>Fat Sal&#39;s</h3>',
-					'<p>Capek and his business partners, originally from New York, opened Fat Sal’s Deli in an attempt to bring “fat sandwiches” to the West Coast, Capek said. “Fat sandwiches” combine a myriad of ingredients, such as meat, cheese, onion rings, mozzarella sticks, eggs and condiments, all in one sandwich.</p>'
+					'<p class="col-md-8">Capek and his business partners, originally from New York, opened Fat Sal&#39;s Deli in an attempt to bring "fat sandwiches" to the West Coast, Capek said. "Fat sandwiches" combine a myriad of ingredients, such as meat, cheese, onion rings, mozzarella sticks, eggs and condiments, all in one sandwich.</p><p class="col-md-4">  <ul class="icons-ul"><li><i class="glyphicon glyphicon-map-marker"></i> 972 Gayley Ave, Los Angeles</li></ul></p>'
 			].join(''),
 			icon: 'http://maps.google.com/mapfiles/markerD.png',
 			zoom: 15,
