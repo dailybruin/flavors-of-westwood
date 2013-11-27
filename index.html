@@ -38,12 +38,59 @@
 .tabs .ullist li a {
     padding: 0px 23.8px !important;
 }
+
+
+.ullist {
+	width: 100%;
+}
+
+.tab-content {
+	margin: 0 0 20px;
+}
+
+.menu .ullist li {
+	width: 49%;
+	float: left;
+	margin-right: 1%
+}
+
+.menu .ullist li.active a,
+.menu .ullist li a:hover {
+	color: #B82200 !important;
+	background-color: #eee !important;
+}
+
+.tabs .ullist li a{
+	padding: 0px 23.8px !important;
+}
+
+.tabs .ullist li a:hover {
+	color: #6f6f6f !important;
+	background-color: transparent !important;
+}
+
+.tabs .ullist li.active a{
+	font-weight: bold;
+	color: #3c3c3c !important;
+	background-color: #fff !important;
+}
+
+.ullist li.active a {
+	font-weight: bold;
+}
+
+.ullist li.active a,
+.ullist li a:hover {
+	color: #B82200 !important;
+	background-color: #eee !important;
+}
 .icons-ul {
 	 list-style-type: none; 
 }
 .icon-ul li {
 line-height: 14px;
 }
+
 
 </style>
 </head>
@@ -87,7 +134,7 @@ var LocsB = [
 			].join(''),
 			fulldesc: [
 		'<h3>Honeymade</h3>',
-		'<p class="col-md-8"><img src="http://dailybruin.com/images/2013/09/546f5b22-42ac-4b6f-8cb2-a41d93fa54a7.jpg" class="img-responsive" alt="Honeymade">Erin Ng / Daily Bruin Senior Staff<br>Perched on a stool in front of a window across from Ronald Reagan UCLA Medical Center, Jeff Selwyn looks up to watch the traffic go by.<br><br>Selwyn is the owner of Honeymade Sweet and Savory, a restaurant that opened last month in Westwood Village.<br><br>"I like to create and I think you can do a lot of that with food," Selwyn said with a soft South African accent.<br><br>When he was younger, Selwyn served in the South African Army.<br><br>"After the army, I had to decide what I was going to do," Selwyn said. "I decided to go into the food business."A chef in the officer’s mess taught him how to cook.<br><br>After leaving the army, Selwyn studied hotel management at the University of Witwatersrand in South Africa, where his emphasis was on desserts and pastries.<br><br>Selwyn said some of his most intriguing dishes at Honeymade were inspired by this training, such as his signature sweet and savory waffle sandwiches, the Kimchi Tuna Waffle and the Tangerine Chicken Waffle.<br><br>"I wanted to put another twist to (desserts) and create something else that no one else is doing," Selwyn said.<br><br>Selwyn said he plans on opening another Honeymade in Las Vegas.</p><p class="col-md-4">  <ul class="icons-ul"><li><i class="glyphicon glyphicon-map-marker"></i> 10912 Le Conte Ave, Los Angeles</li> 	<li><i class="glyphicon glyphicon-earphone"></i> (310) 208-7111</li> 	<li><i class="glyphicon glyphicon-calendar"></i> Mon-Fri 11 a.m. to 9 p.m., Sat 11:30 a.m. to 8:30 p.m.</li>  <li><i class="glyphicon glyphicon-cutlery"></i> Delivery: Yes</li>	<li><i class="glyphicon glyphicon-tag"></i> $$</li> 	<li><i class="glyphicon glyphicon-info-sign"></i> No alcohol. Street parking.</li></ul></p>'
+		'<p class="col-md-8"><img src="http://dailybruin.com/images/2013/09/546f5b22-42ac-4b6f-8cb2-a41d93fa54a7.jpg" class="img-responsive" alt="Honeymade">Erin Ng / Daily Bruin Senior Staff<br>Perched on a stool in front of a window across from Ronald Reagan UCLA Medical Center, Jeff Selwyn looks up to watch the traffic go by.<br><br>Selwyn is the owner of Honeymade Sweet and Savory, a restaurant that opened last month in Westwood Village.<br><br>"I like to create and I think you can do a lot of that with food," Selwyn said with a soft South African accent.<br><br>When he was younger, Selwyn served in the South African Army.<br><br>"After the army, I had to decide what I was going to do," Selwyn said. "I decided to go into the food business."A chef in the officer&#39;s mess taught him how to cook.<br><br>After leaving the army, Selwyn studied hotel management at the University of Witwatersrand in South Africa, where his emphasis was on desserts and pastries.<br><br>Selwyn said some of his most intriguing dishes at Honeymade were inspired by this training, such as his signature sweet and savory waffle sandwiches, the Kimchi Tuna Waffle and the Tangerine Chicken Waffle.<br><br>"I wanted to put another twist to (desserts) and create something else that no one else is doing," Selwyn said.<br><br>Selwyn said he plans on opening another Honeymade in Las Vegas.</p><p class="col-md-4">  <ul class="icons-ul"><li><i class="glyphicon glyphicon-map-marker"></i> 10912 Le Conte Ave, Los Angeles</li> 	<li><i class="glyphicon glyphicon-earphone"></i> (310) 208-7111</li> 	<li><i class="glyphicon glyphicon-calendar"></i> Mon-Fri 11 a.m. to 9 p.m., Sat 11:30 a.m. to 8:30 p.m.</li>  <li><i class="glyphicon glyphicon-cutlery"></i> Delivery: Yes</li>	<li><i class="glyphicon glyphicon-tag"></i> $$</li> 	<li><i class="glyphicon glyphicon-info-sign"></i> No alcohol. Street parking.</li></ul></p>'
 			].join(''),
 			icon: 'http://maps.google.com/mapfiles/markerB.png',
 			zoom: 15,
@@ -120,7 +167,7 @@ var LocsB = [
 			].join(''),
 			fulldesc: [
 					'<h3>Fat Sal&#39;s</h3>',
-					'<p class="col-md-8"><img src="http://dailybruin.com/images/2013/09/e69adc4c-fa91-48c3-aad0-130c5d375712.jpg" class="img-responsive" alt="Fat Sal&#39;s">Erin Ng / Daily Bruin Senior Staff<br>Salvatore Capek used to build restaurants. Three years ago, he started building sandwiches.<br><br>Capek and his business partners, originally from New York, opened Fat Sal&#39;s Deli in an attempt to bring "fat sandwiches" to the West Coast, Capek said. "Fat sandwiches" combine a myriad of ingredients, such as meat, cheese, onion rings, mozzarella sticks, eggs and condiments, all in one sandwich.<br><br>"We try to combine everything that&#39;s tasty and stuff it into one ridiculous, delicious sandwich," Capek said.<br><br>Capek said he grew up eating sandwiches like this all his life, but he would make them himself.<br><br>Capek added onion rings to his beef sandwiches to create what is akin to the Fat Sal currently on the menu, and chicken parmesan to cold cut sandwiches to create the Fat Anthony, another popular sandwich on the menu.<br><br>Most of the customers at Fat Sal&#39;s are students, faculty and staff from UCLA and the Ronald Reagan UCLA Medical Center, Capek said.<br><br>"If you&#39;re a doctor or nurse or x-ray technician (working the night shift), your lunch is at midnight," Capek said. "People come in at around midnight and eat lunch."<br><br>Fat Sal&#39;s Deli has opened two other branches, in San Diego and Hollywood, this year.<br><br>Capek said students from UCLA who have graduated come and eat at Fat Sal&#39;s when they come back to visit or go to one of the other locations.<br><br>"I was working at the San Diego store this past memorial day weekend. One (UCLA alum) came and asked, &#39;Do you guys make the fat cordon blue down here?&#39;" Capek said. "He was so excited that we did because it wasn’t on the menu here."<br><br>Other customers have left their own mark on the menu. One of the sandwiches, the Fat Jaime, has been named by the only person to have eaten the "Big Fat Fatty" sandwich, a 27 inch sub that weighs 10 pounds.<br><br>But Capek said the best part is seeing people enjoy your food.<br><br>"We have a passion for the food there. We are foodies &#45; we love food, we love watching people enjoy our food."</p><p class="col-md-4">  <ul class="icons-ul"><li><i class="glyphicon glyphicon-map-marker"></i> 972 Gayley Ave, Los Angeles</li> 	<li><i class="glyphicon glyphicon-earphone"></i> (310) 208-5070</li> 	<li><i class="glyphicon glyphicon-calendar"></i> Mon-Sun 11 a.m. to 3 a.m.</li>  <li><i class="glyphicon glyphicon-cutlery"></i> Delivery: No</li>	<li><i class="glyphicon glyphicon-tag"></i> $</li> 	<li><i class="glyphicon glyphicon-info-sign"></i> No alcohol. Street parking.</li></ul></p>'
+					'<p class="col-md-8"><img src="http://dailybruin.com/images/2013/09/e69adc4c-fa91-48c3-aad0-130c5d375712.jpg" class="img-responsive" alt="Fat Sal&#39;s">Erin Ng / Daily Bruin Senior Staff<br>Salvatore Capek used to build restaurants. Three years ago, he started building sandwiches.<br><br>Capek and his business partners, originally from New York, opened Fat Sal&#39;s Deli in an attempt to bring "fat sandwiches" to the West Coast, Capek said. "Fat sandwiches" combine a myriad of ingredients, such as meat, cheese, onion rings, mozzarella sticks, eggs and condiments, all in one sandwich.<br><br>"We try to combine everything that&#39;s tasty and stuff it into one ridiculous, delicious sandwich," Capek said.<br><br>Capek said he grew up eating sandwiches like this all his life, but he would make them himself.<br><br>Capek added onion rings to his beef sandwiches to create what is akin to the Fat Sal currently on the menu, and chicken parmesan to cold cut sandwiches to create the Fat Anthony, another popular sandwich on the menu.<br><br>Most of the customers at Fat Sal&#39;s are students, faculty and staff from UCLA and the Ronald Reagan UCLA Medical Center, Capek said.<br><br>"If you&#39;re a doctor or nurse or x-ray technician (working the night shift), your lunch is at midnight," Capek said. "People come in at around midnight and eat lunch."<br><br>Fat Sal&#39;s Deli has opened two other branches, in San Diego and Hollywood, this year.<br><br>Capek said students from UCLA who have graduated come and eat at Fat Sal&#39;s when they come back to visit or go to one of the other locations.<br><br>"I was working at the San Diego store this past memorial day weekend. One (UCLA alum) came and asked, &#39;Do you guys make the fat cordon blue down here?&#39;" Capek said. "He was so excited that we did because it wasn&#39;t on the menu here."<br><br>Other customers have left their own mark on the menu. One of the sandwiches, the Fat Jaime, has been named by the only person to have eaten the "Big Fat Fatty" sandwich, a 27 inch sub that weighs 10 pounds.<br><br>But Capek said the best part is seeing people enjoy your food.<br><br>"We have a passion for the food there. We are foodies &#45; we love food, we love watching people enjoy our food."</p><p class="col-md-4">  <ul class="icons-ul"><li><i class="glyphicon glyphicon-map-marker"></i> 972 Gayley Ave, Los Angeles</li> 	<li><i class="glyphicon glyphicon-earphone"></i> (310) 208-5070</li> 	<li><i class="glyphicon glyphicon-calendar"></i> Mon-Sun 11 a.m. to 3 a.m.</li>  <li><i class="glyphicon glyphicon-cutlery"></i> Delivery: No</li>	<li><i class="glyphicon glyphicon-tag"></i> $</li> 	<li><i class="glyphicon glyphicon-info-sign"></i> No alcohol. Street parking.</li></ul></p>'
 			].join(''),
 			icon: 'http://maps.google.com/mapfiles/markerD.png',
 			zoom: 15,
