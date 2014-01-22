@@ -119,12 +119,30 @@ p.span8 {
 	width: 180px;
 	float: left;
 }
-img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
-img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
-.alignright {float:right; }
-.alignleft {float:left; }
-.wp-caption { margin: 5px; padding: 5px; border: solid 1px #E5E5FF; background: #E5F2FF; font-size:90%; color: black }
-
+.photocred-inline {
+    font-style:italic;
+    color: #c0c0c0;
+    font-size: 12px;
+    text-align: right;
+}
+.thumbnail.with-caption {
+  display: inline-block;
+  background: #f5f5f5;
+  float:right;
+}
+.thumbnail.with-caption p {
+  margin: 0;
+  padding-top: 0.5em;
+}
+.thumbnail.with-caption small:before {
+  content: '\2014 \00A0';
+}
+.thumbnail.with-caption small {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  color: #999;
+}
 </style>
 </head>
 <body>
@@ -180,7 +198,7 @@ var LocsB = [
                         ].join(''),
                         fulldesc: [
                 '<h3>Honeymade</h3>',
-                '<p class="span8"><img src="http://dailybruin.com/images/2013/09/546f5b22-42ac-4b6f-8cb2-a41d93fa54a7.jpg" class="img-responsive" alt="Honeymade"><span class="photocred">Erin Ng / Daily Bruin Senior Staff</span><br><br><strong>BY CHANDINI SONI</strong><br><br>Perched on a stool in front of a window across from Ronald Reagan UCLA Medical Center, Jeff Selwyn looks up to watch the traffic go by.<br><br>Selwyn is the owner of Honeymade Sweet and Savory, a restaurant that opened last month in Westwood Village.<br><br>"I like to create and I think you can do a lot of that with food," Selwyn said with a soft South African accent.<br><br>When he was younger, Selwyn served in the South African Army.<br><br>"After the army, I had to decide what I was going to do," Selwyn said. "I decided to go into the food business."A chef in the officer&#39;s mess taught him how to cook.<br><br>After leaving the army, Selwyn studied hotel management at the University of Witwatersrand in South Africa, where his emphasis was on desserts and pastries.<br><br>Selwyn said some of his most intriguing dishes at Honeymade were inspired by this training, such as his signature sweet and savory waffle sandwiches, the Kimchi Tuna Waffle and the Tangerine Chicken Waffle.<br><br>"I wanted to put another twist to (desserts) and create something else that no one else is doing," Selwyn said.<br><br>Selwyn said he plans on opening another Honeymade in Las Vegas.</p><p class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 10912 Le Conte Ave, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 208-7111</li>         <li><i class="icon-calendar"></i> Mon-Fri 11 a.m. to 9 p.m., Sat 11:30 a.m. to 8:30 p.m.</li>  <li><i class="icon-briefcase"></i> Delivery: Yes</li>        <li><i class="icon-tag"></i> $$</li>         <li><i class="icon-info-sign"></i> No alcohol. Street parking.</li> <li><i class="icon-globe"></i> <a href="http://www.honeymadela.com/" target="_blank">www.honeymadela.com</a></li></ul></p>'
+                '<div class="row"><div class="span8"><img src="http://dailybruin.com/images/2013/09/546f5b22-42ac-4b6f-8cb2-a41d93fa54a7.jpg" class="img-responsive" alt="Honeymade"><span class="photocred">Erin Ng / Daily Bruin Senior Staff</span><br><br><strong>BY CHANDINI SONI</strong><br><br> Perched on a stool in front of a window across from Ronald Reagan UCLA Medical Center, Jeff Selwyn looks up to watch the traffic go by.<br><br>Selwyn is the owner of Honeymade Sweet and Savory, a restaurant that opened last month in Westwood Village.<br><br>"I like to create and I think you can do a lot of that with food," Selwyn said with a soft South African accent.<br><br>When he was younger, Selwyn served in the South African Army.<br><br><div class="thumbnail with-caption"><img src="http://dailybruin.com/images/2013/09/4e607184-6f2d-4e55-a91a-e46ff4dd0655.jpg" width="225"><span class="photocred-inline">Chandini Soni / Daily Bruin Senior Staff</span></div>"After the army, I had to decide what I was going to do," Selwyn said. "I decided to go into the food business."A chef in the officer&#39;s mess taught him how to cook.<br><br>After leaving the army, Selwyn studied hotel management at the University of Witwatersrand in South Africa, where his emphasis was on desserts and pastries.<br><br>Selwyn said some of his most intriguing dishes at Honeymade were inspired by this training, such as his signature sweet and savory waffle sandwiches, the Kimchi Tuna Waffle and the Tangerine Chicken Waffle.<br><br>"I wanted to put another twist to (desserts) and create something else that no one else is doing," Selwyn said.<br><br>Selwyn said he plans on opening another Honeymade in Las Vegas.</div><div class="span4">  <ul class="icons-ul"><li><i class="icon-map-marker"></i> 10912 Le Conte Ave, Los Angeles</li>         <li><i class="icon-bell"></i> (310) 208-7111</li>         <li><i class="icon-calendar"></i> Mon-Fri 11 a.m. to 9 p.m., Sat 11:30 a.m. to 8:30 p.m.</li>  <li><i class="icon-briefcase"></i> Delivery: Yes</li>        <li><i class="icon-tag"></i> $$</li>         <li><i class="icon-info-sign"></i> No alcohol. Street parking.</li> <li><i class="icon-globe"></i> <a href="http://www.honeymadela.com/" target="_blank">www.honeymadela.com</a></li></ul></div></div>'
                         ].join(''),
                         icon: 'http://maps.google.com/mapfiles/markerB.png',
                         zoom: 15,
