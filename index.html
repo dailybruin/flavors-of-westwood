@@ -151,15 +151,6 @@ line-height: 14px;
 </head>
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div class="container">
 
 <h1>Flavors of Westwood</h1>
@@ -167,12 +158,6 @@ line-height: 14px;
 <div id="controls-tabs"></div>
 <div id="gmap-tabs" class="gmap" style="position: relative; overflow: hidden;"></div>
 <div id="info">
-
-<div class="fb-comments" data-href="http://google.com" data-numposts="5" data-colorscheme="light"></div></div>
-
-
-
-
 
 
 <script type="text/javascript">
@@ -362,8 +347,8 @@ $(function() {
                 $('#info').html(location.fulldesc);
         },
                 map_options: {
-                set_center: [34.06105, -118.445077],
-                zoom: 17
+                set_center: [34.059646, -118.443498],
+                zoom: 15
                 },
                 controls_on_map: false
         }).Load();
